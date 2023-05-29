@@ -4,9 +4,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  width: 70%;
+  max-width: 70%;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 header {
@@ -89,6 +88,7 @@ section {
   border-radius: 5px;
   border: 1px solid #377dff;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .startnow {
@@ -132,9 +132,9 @@ section {
   font-weight: bold;
 }
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-device-width: 480px) {
   body {
-    width: 95%;
+    max-width: 95%;
   }
 
   header {
@@ -167,7 +167,7 @@ section {
   }
 
   .part2 {
-    grid-template-columns: repeat(1, 90%);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(6, 180px);
     place-content: center;
   }
@@ -177,9 +177,9 @@ section {
   }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1260px) {
   body {
-    width: 90%;
+    max-width: 95%;
   }
 
   .avatar {
@@ -198,13 +198,13 @@ section {
   }
 
   .part2 {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 49%);
     grid-template-rows: repeat(2, 180px);
   }
 }
 
-@media screen and (min-device-width: 1366px) {
+@media screen and (min-width: 1260px) and (max-width: 1450px) {
   body {
-    width: 100%;
+    max-width: 100%;
   }
 }
